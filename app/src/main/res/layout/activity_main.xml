@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/logo"
+        android:paddingStart="120dp"
+        android:paddingEnd="120dp"
+        android:src="@drawable/img_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_logo"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="200dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_belajar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_belajar"
+            android:contentDescription="@string/button" />
+
+        <ImageButton
+            android:id="@+id/btn_bermain"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_bermain"
+            android:contentDescription="@string/button" />
+
+        <ImageButton
+            android:id="@+id/btn_kuis"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_kuis"
+            android:contentDescription="@string/button" />
+
+        <ImageButton
+            android:id="@+id/btn_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_keluar"
+            android:contentDescription="@string/button" />
+    </LinearLayout>
+
+</RelativeLayout>
