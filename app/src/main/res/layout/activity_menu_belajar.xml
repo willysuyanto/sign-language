@@ -19,386 +19,395 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_belajar">
 
-
-        <ImageView
+        <LinearLayout
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="-30dp"
-            android:baselineAlignBottom="true"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/img_grass" />
+            android:orientation="vertical">
 
-        <androidx.gridlayout.widget.GridLayout
-            android:id="@+id/mainGrid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
-            app:alignmentMode="alignMargins"
-            app:columnCount="2"
-            app:columnOrderPreserved="false"
-            app:rowCount="6">
-            <!--Baris 1-->
-            <!--Kolom 1-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="-30dp"
+                android:baselineAlignBottom="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/img_grass" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:rowCount="6">
+                <!--Baris 1-->
+                <!--Kolom 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_huruf" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_huruf" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/huruf"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/huruf"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-            <!--Kolom 2-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                </androidx.cardview.widget.CardView>
+                <!--Kolom 2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_angka" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_angka" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/angka"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/angka"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <!--Baris 2-->
-            <!--Kolom 1-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                <!--Baris 2-->
+                <!--Kolom 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_keluarga" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_keluarga" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/keluarga"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/keluarga"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-            <!--Kolom 2-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                </androidx.cardview.widget.CardView>
+                <!--Kolom 2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_makanan" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_makanan" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/makanan"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/makanan"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <!--Baris 3-->
-            <!--Kolom 1-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                <!--Baris 3-->
+                <!--Kolom 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_ucapan" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_ucapan" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ucapan"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ucapan"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-            <!--Kolom 2-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                </androidx.cardview.widget.CardView>
+                <!--Kolom 2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_tanya" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_tanya" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tanya"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tanya"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <!--Baris 4-->
-            <!--Kolom 1-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                <!--Baris 4-->
+                <!--Kolom 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_sebutan" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_sebutan" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/sebutan"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sebutan"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-            <!--Kolom 2-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                </androidx.cardview.widget.CardView>
+                <!--Kolom 2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_perasaan" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_perasaan" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/perasaan"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perasaan"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <!--Baris 5-->
-            <!--Kolom 1-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                <!--Baris 5-->
+                <!--Kolom 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_rasa" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_rasa" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rasa"
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rasa"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-            <!--Kolom 2-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                </androidx.cardview.widget.CardView>
+                <!--Kolom 2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:visibility="invisible">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="invisible">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/btn_blank" />
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/btn_blank" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/huruf"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/transparent"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/huruf"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/transparent"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-        </androidx.gridlayout.widget.GridLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+
+
     </ScrollView>
 
     <TextView
