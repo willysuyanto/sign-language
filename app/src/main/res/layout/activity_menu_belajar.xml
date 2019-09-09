@@ -24,15 +24,6 @@
             android:layout_width="match_parent"
             android:orientation="vertical">
 
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginBottom="-30dp"
-                android:baselineAlignBottom="true"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/img_grass" />
-
             <androidx.gridlayout.widget.GridLayout
                 android:id="@+id/mainGrid"
                 android:layout_width="match_parent"
@@ -405,6 +396,13 @@
                 </androidx.cardview.widget.CardView>
             </androidx.gridlayout.widget.GridLayout>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="-30dp"
+                android:baselineAlignBottom="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/img_grass" />
         </LinearLayout>
 
 
