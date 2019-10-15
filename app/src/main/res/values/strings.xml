@@ -36,4 +36,10 @@
     <string name="kk">Kk</string>
     <string name="bisindo">BISINDO</string>
     <string name="sibi">SIBI</string>
+    <string name="belajar_bahasa_isyarat">Belajar Bahasa Isyarat</string>
+    <string name="Latihan">Latihan</string>
+    <string name="Bermain">Bermain</string>
+    <string name="Keluar">Keluar</string>
+    <string name="ibu">Ibu</string>
+
 </resources>

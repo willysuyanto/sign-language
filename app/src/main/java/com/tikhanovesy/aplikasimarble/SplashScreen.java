@@ -31,10 +31,12 @@ public class SplashScreen extends AppCompatActivity {
                 if (Identitas.equals("Ada")) {
                     Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                     finish();
                 } else {
                     Intent intent = new Intent(SplashScreen.this, InputNamaActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                     finish();
                 }
             }

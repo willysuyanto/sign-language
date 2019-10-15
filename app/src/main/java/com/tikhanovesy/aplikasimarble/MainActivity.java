@@ -5,16 +5,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton mButtonBelajar;
-    private ImageButton mButtonBermain;
-    private ImageButton mButtonKeluar;
+    private Button mButtonBelajar;
+    private Button mButtonBermain;
+    private Button mButtonKeluar;
+    private Button mButtonLatihan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +25,20 @@ public class MainActivity extends AppCompatActivity {
         mButtonBelajar = findViewById(R.id.btn_belajar);
         mButtonBermain = findViewById(R.id.btn_bermain);
         mButtonKeluar = findViewById(R.id.btn_keluar);
+        mButtonLatihan = findViewById(R.id.btn_kuis);
 
         mButtonBelajar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, BelajarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonLatihan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, KuisActivity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 makeExitDialog();
             }
         });
-
 
     }
 

@@ -50,7 +50,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
             super(itemView);
             text = itemView.findViewById(R.id.TextTitle);
             this.onTitleListener = onTitleListener;
-
             itemView.setOnClickListener(this);
         }
 

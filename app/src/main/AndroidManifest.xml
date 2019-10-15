@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlaceholderActivity"></activity>
+        <activity android:name=".KuisActivity"></activity>
+        <activity android:name=".PlaceholderActivity" />
         <activity android:name=".GameCafeActivity" />
         <activity android:name=".GameRumahActivity" />
         <activity android:name=".PetunjukActivity" />

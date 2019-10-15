@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background">
+
+    <ImageButton
+        android:id="@+id/btn_kembali"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_kembali2"
+        android:contentDescription="@string/button_back" />
+
+    <ImageButton
+        android:id="@+id/btn_ulang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="305dp"
+        android:background="@drawable/btn_cobalagi2"
+        android:contentDescription="@string/button"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/LayoutVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_kembali"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextPertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/aa"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <VideoView
+            android:id="@+id/vidplayer"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutPertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutVideo"
+        android:gravity="center"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp">
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonA"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_kosong"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_kosong"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_marginStart="290dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_kosong"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_below="@+id/buttonC"
+            android:layout_marginTop="10dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_kosong"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:text="Button" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

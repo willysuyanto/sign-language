@@ -1,9 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_pilihan"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_placeholder_rumah"
-    tools:context=".GameRumahActivity">
+    android:orientation="vertical"
+    android:background="@drawable/img_level_rumah">
+
+
+    <ImageView
+        android:id="@+id/img_kakek_putih"
+        android:layout_width="120dp"
+        android:layout_height="230dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="515dp"
+        android:layout_marginBottom="865dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_kakek_putih" />
+    <ImageView
+        android:id="@+id/img_adik_putih"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="468dp"
+        android:layout_marginBottom="860dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_adik_putih" />
+    <ImageView
+        android:id="@+id/img_ibu_putih"
+        android:layout_width="120dp"
+        android:layout_height="240dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="380dp"
+        android:layout_marginBottom="865dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_ibu_putih" />
+    <ImageView
+        android:id="@+id/img_nenek_putih"
+        android:layout_width="110dp"
+        android:layout_height="215dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="865dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_nenek_putih" />
+    <ImageView
+        android:id="@+id/img_ayah_putih"
+        android:layout_width="150dp"
+        android:layout_height="270dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="865dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_ayah_putih" />
+    <ImageView
+        android:id="@+id/img_kakak_putih"
+        android:layout_width="90dp"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="865dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_kakak_putih" />
+
+
+    <ImageView
+            android:id="@+id/img_ayah"
+            android:layout_width="150dp"
+            android:layout_height="270dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="250dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/img_ayah"
+            android:contentDescription="@string/sebutan"/>
+
+        <ImageView
+            android:id="@+id/img_kakak"
+            android:layout_width="90dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="80dp"
+            android:contentDescription="@string/sebutan"
+            android:src="@drawable/img_kakak" />
+
+        <ImageView
+            android:id="@+id/img_ibu"
+            android:layout_width="120dp"
+            android:layout_height="240dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="390dp"
+            android:layout_marginBottom="80dp"
+            android:contentDescription="@string/sebutan"
+            android:src="@drawable/img_ibu" />
+
+        <ImageView
+            android:id="@+id/img_adik"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="80dp"
+            android:contentDescription="@string/sebutan"
+            android:src="@drawable/img_adik" />
+
+        <ImageView
+            android:id="@+id/img_kakek"
+            android:layout_width="120dp"
+            android:layout_height="230dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="655dp"
+            android:layout_marginBottom="80dp"
+            android:contentDescription="@string/sebutan"
+            android:src="@drawable/img_kakek" />
+
+        <ImageView
+            android:id="@+id/img_nenek"
+            android:layout_width="110dp"
+            android:layout_height="215dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="525dp"
+            android:layout_marginBottom="80dp"
+            android:contentDescription="@string/sebutan"
+            android:src="@drawable/img_nenek" />
 
 </RelativeLayout>
+
+

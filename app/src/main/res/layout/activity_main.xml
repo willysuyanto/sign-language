@@ -25,35 +25,51 @@
         android:layout_marginEnd="200dp"
         android:orientation="vertical">
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_belajar"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:background="@drawable/btn_belajar"
+            android:text="@string/belajar_bahasa_isyarat"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            android:background="@drawable/custom_button"
             android:contentDescription="@string/button" />
 
-        <ImageButton
-            android:id="@+id/btn_bermain"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/btn_bermain"
-            android:contentDescription="@string/button" />
-
-        <ImageButton
+        <Button
             android:id="@+id/btn_kuis"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="25dp"
-            android:background="@drawable/btn_kuis"
+            android:text="@string/Latihan"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            android:background="@drawable/custom_button"
             android:contentDescription="@string/button" />
 
-        <ImageButton
+        <Button
+            android:id="@+id/btn_bermain"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/Bermain"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            android:background="@drawable/custom_button"
+            android:contentDescription="@string/button" />
+
+        <Button
             android:id="@+id/btn_keluar"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="25dp"
-            android:background="@drawable/btn_keluar"
+            android:text="@string/Keluar"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            android:background="@drawable/custom_button"
             android:contentDescription="@string/button" />
     </LinearLayout>
 

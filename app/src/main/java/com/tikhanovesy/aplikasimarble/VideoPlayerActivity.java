@@ -34,8 +34,8 @@ public class VideoPlayerActivity extends AppCompatActivity {
         } else {
             Judul = intent.getStringExtra(BahasaIsyarat.EXTRA_TEXT2);
         }
-        textView.setText(Judul);
         Uri uri = Uri.parse(intent.getStringExtra(BahasaIsyarat.EXTRA_TEXT));
+        textView.setText(Judul);
         vView.setVideoURI(uri);
         vView.start();
 
