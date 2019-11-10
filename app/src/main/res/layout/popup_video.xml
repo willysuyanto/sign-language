@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="70dp"
+    app:layout_gravity="center"
+    android:id="@+id/popBenar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <TextView
+        android:id="@+id/juduls"
+        android:layout_width="650dp"
+        android:text="Ayah"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:elevation="20dp"
+        android:padding="25dp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:text="X"
+        android:textSize="40dp"
+        android:layout_gravity="end"
+        android:elevation="21dp"
+        android:background="@drawable/buttonclose"/>
+
+    <VideoView
+        android:layout_gravity="center"
+        android:id="@+id/videopopup"
+        android:layout_width="620dp"
+        android:layout_height="1000dp"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/ulangVideo"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:visibility="visible"
+        android:background="@drawable/btn_cobalagi2" />
+
+
+</androidx.cardview.widget.CardView>

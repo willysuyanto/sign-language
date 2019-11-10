@@ -177,7 +177,7 @@ public class KuisActivity extends AppCompatActivity {
         Btn_Ok_benar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (posisi<=daftarSoal.size()-1){
+                if (posisi<daftarSoal.size()-1){
                     posisi = posisi+1;
                     refreshSoal(posisi);
                     popupDialog.dismiss();
@@ -201,13 +201,12 @@ public class KuisActivity extends AppCompatActivity {
         Btn_Ok_salah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (posisi<=daftarSoal.size()-1){
-                    posisi = posisi+1;
+                if (posisi<daftarSoal.size()-1){
                     refreshSoal(posisi);
                     popupDialog.dismiss();
                 }else {
                     popupDialog.dismiss();
-                    finish();
+                    refreshSoal(posisi);
                 }
             }
         });

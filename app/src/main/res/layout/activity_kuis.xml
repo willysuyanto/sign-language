@@ -34,18 +34,6 @@
         android:layout_marginEnd="90dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/TextPertanyaan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/aa"
-            android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:textSize="30sp" />
-
         <VideoView
             android:id="@+id/vidplayer"
             android:layout_width="match_parent"
@@ -54,6 +42,18 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/TextPertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/aa"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <RelativeLayout

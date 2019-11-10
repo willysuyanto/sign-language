@@ -3,6 +3,7 @@ package com.tikhanovesy.aplikasimarble;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,10 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
-    private ArrayList<String> mItemList;
+    private ArrayList<ObjekBahasaIsyarat> mItemList;
     private OnTitleListener mOnTitleListener;
 
-    public ListAdapter(ArrayList<String> itemList, OnTitleListener onTitleListener) {
+    public ListAdapter(ArrayList<ObjekBahasaIsyarat> itemList, OnTitleListener onTitleListener) {
         mItemList = itemList;
         mOnTitleListener = onTitleListener;
     }
@@ -29,8 +30,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        String currentItem = String.valueOf(mItemList.get(position));
+        String currentItem = mItemList.get(position).getTitle();
+        int CurrentImage = mItemList.get(position).getImage();
+        String currentTitle= mItemList.get(position).getSubtitle();
+        holder.text2.setText(currentTitle);
         holder.text.setText(currentItem);
+        holder.Images.setImageResource(CurrentImage);
     }
 
     @Override
@@ -44,11 +49,15 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
 
     public static class viewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView text;
+        public TextView text2;
+        public ImageView Images;
         OnTitleListener onTitleListener;
 
         public viewHolder(@NonNull View itemView, OnTitleListener onTitleListener) {
             super(itemView);
-            text = itemView.findViewById(R.id.TextTitle);
+            text = itemView.findViewById(R.id.textSubtitle);
+            text2 = itemView.findViewById(R.id.TextTitle);
+            Images = itemView.findViewById(R.id.RecImage);
             this.onTitleListener = onTitleListener;
             itemView.setOnClickListener(this);
         }
