@@ -1,4 +1,4 @@
-package com.tikhanovesy.aplikasimarble;
+package com.wildangunawan.bslapp;
 
 public class ObjekBahasaIsyarat {
     private String Title;

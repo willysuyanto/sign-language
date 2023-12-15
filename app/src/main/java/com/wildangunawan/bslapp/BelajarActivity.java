@@ -1,4 +1,4 @@
-package com.tikhanovesy.aplikasimarble;
+package com.wildangunawan.bslapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,31 +38,31 @@ public class BelajarActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     switch (FinalI) {
                         case 0:
-                            openMenu("Huruf");
+                            openMenu("Alphabet");
                             break;
                         case 1:
-                            openMenu("Angka");
+                            openMenu("Number");
                             break;
                         case 2:
-                            openMenu("Keluarga");
+                            openMenu("Family");
                             break;
                         case 3:
-                            openMenu("Makanan");
+                            openMenu("Food");
                             break;
                         case 4:
-                            openMenu("Ucapan");
+                            openMenu("Expressions");
                             break;
                         case 5:
-                            openMenu("Tanya");
+                            openMenu("Question");
                             break;
                         case 6:
-                            openMenu("Sebutan");
+                            openMenu("Pronoun");
                             break;
                         case 7:
-                            openMenu("Perasaan");
+                            openMenu("Feeling");
                             break;
                         case 8:
-                            openMenu("Rasa");
+                            openMenu("Taste");
                             break;
                     }
                 }

@@ -1,4 +1,4 @@
-package com.tikhanovesy.aplikasimarble;
+package com.wildangunawan.bslapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -54,7 +54,7 @@ public class BahasaIsyarat extends AppCompatActivity implements ListAdapter.OnTi
 
     private void initTitle(String text) {
         switch (text) {
-            case "Huruf":
+            case "Alphabet":
                 mTitle.add(new ObjekBahasaIsyarat(text,"Aa",R.drawable.img_a));
                 mTitle.add(new ObjekBahasaIsyarat(text,"Bb",R.drawable.img_b));
                 mTitle.add(new ObjekBahasaIsyarat(text,"Cc",R.drawable.img_c));
@@ -82,7 +82,7 @@ public class BahasaIsyarat extends AppCompatActivity implements ListAdapter.OnTi
                 mTitle.add(new ObjekBahasaIsyarat(text,"Yy",R.drawable.img_y));
                 mTitle.add(new ObjekBahasaIsyarat(text,"Zz",R.drawable.img_z));
                 break;
-            case "Angka":
+            case "Number":
                 mTitle.add(new ObjekBahasaIsyarat(text,"1",R.drawable.img_1));
                 mTitle.add(new ObjekBahasaIsyarat(text,"2",R.drawable.img_2));
                 mTitle.add(new ObjekBahasaIsyarat(text,"3",R.drawable.img_3));
@@ -104,60 +104,60 @@ public class BahasaIsyarat extends AppCompatActivity implements ListAdapter.OnTi
                 mTitle.add(new ObjekBahasaIsyarat(text,"2000",R.drawable.img_0));
                 mTitle.add(new ObjekBahasaIsyarat(text,"10000",R.drawable.img_0));
                 break;
-            case "Keluarga":
-                mTitle.add(new ObjekBahasaIsyarat(text,"Ayah",R.drawable.img_ayahs));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Ibu",R.drawable.img_ibus));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kakak",R.drawable.img_kakaks));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Adik",R.drawable.img_adiks));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kakek",R.drawable.img_kakeks));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Nenek",R.drawable.img_neneks));
+            case "Family":
+                mTitle.add(new ObjekBahasaIsyarat(text,"Dad",R.drawable.img_ayahs));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Mom",R.drawable.img_ibus));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Brother",R.drawable.img_kakaks));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Sister",R.drawable.img_adiks));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Grandpa",R.drawable.img_kakeks));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Grandma",R.drawable.img_neneks));
                 break;
-            case "Makanan":
-                mTitle.add(new ObjekBahasaIsyarat(text,"Nasi",R.drawable.img_nasi));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Sayur",R.drawable.img_sayur));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kue",R.drawable.img_kueh));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Permen",R.drawable.img_permen));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Air",R.drawable.img_airs));
+            case "Food":
+                mTitle.add(new ObjekBahasaIsyarat(text,"Rice",R.drawable.img_nasi));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Vegetable",R.drawable.img_sayur));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Cake",R.drawable.img_kueh));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Candy",R.drawable.img_permen));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Water",R.drawable.img_airs));
                 break;
-            case "Ucapan":
+            case "Expressions":
                 mTitle.add(new ObjekBahasaIsyarat(text,"Halo",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Terimakasih",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Selamat",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Maaf",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Ampun",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Sama-Sama",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Thanks",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Congratulation",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Sorry",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Forgive",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"You're Welcome",R.drawable.img_0));
                 mTitle.add(new ObjekBahasaIsyarat(text,"Assalamualaikum",R.drawable.img_0));
                 break;
-            case "Tanya":
-                mTitle.add(new ObjekBahasaIsyarat(text,"Apa",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kapan",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Dimana",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Siapa",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Mengapa",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Bagaimana",R.drawable.img_0));
+            case "Question":
+                mTitle.add(new ObjekBahasaIsyarat(text,"What",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"When",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Where",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Who",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Why",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"How",R.drawable.img_0));
                 break;
-            case "Sebutan":
-                mTitle.add(new ObjekBahasaIsyarat(text,"Aku",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kamu",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kami",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Kita",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Mereka",R.drawable.img_0));
+            case "Pronoun":
+                mTitle.add(new ObjekBahasaIsyarat(text,"Me",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"You",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Us",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"We",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"They",R.drawable.img_0));
                 break;
-            case "Perasaan":
-                mTitle.add(new ObjekBahasaIsyarat(text,"Senang",R.drawable.img_senang));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Sedih",R.drawable.img_sedih));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Marah",R.drawable.img_marah));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Malu",R.drawable.img_malu));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Sakit",R.drawable.img_sakit));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Malas",R.drawable.img_males));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Capek",R.drawable.img_capek));
+            case "Feelings":
+                mTitle.add(new ObjekBahasaIsyarat(text,"Happy",R.drawable.img_senang));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Sad",R.drawable.img_sedih));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Angry",R.drawable.img_marah));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Shy",R.drawable.img_malu));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Hurt",R.drawable.img_sakit));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Lazy",R.drawable.img_males));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Tired",R.drawable.img_capek));
                 break;
             case "Rasa":
-                mTitle.add(new ObjekBahasaIsyarat(text,"Manis",R.drawable.img_manis));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Asin",R.drawable.img_asin));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Pedas",R.drawable.img_pedas));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Pahit",R.drawable.img_0));
-                mTitle.add(new ObjekBahasaIsyarat(text,"Asam",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Sweet",R.drawable.img_manis));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Salty",R.drawable.img_asin));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Spicy",R.drawable.img_pedas));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Bitter",R.drawable.img_0));
+                mTitle.add(new ObjekBahasaIsyarat(text,"Sour",R.drawable.img_0));
                 break;
         }
     }

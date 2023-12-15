@@ -1,4 +1,4 @@
-package com.tikhanovesy.aplikasimarble;
+package com.wildangunawan.bslapp;
 
 import android.app.Dialog;
 import android.graphics.Color;
@@ -117,13 +117,13 @@ public class KuisActivity extends AppCompatActivity {
 
     public void isiSoal(){
         daftarSoal.add(new SoalLatihan(
-                "Nomer berapa yang dimaksud ibu guru?",
-                "Nomer 1",
-                "Nomer 5",
-                "Nomer 10",
-                "Nomer 100",
-                "Nomer 10",
-                "/storage/emulated/0/Video/Angka/10.mp4"));
+                "What number did the teacher said?",
+                "Number 1",
+                "Number 5",
+                "Number 10",
+                "Number 100",
+                "Number 10",
+                "/storage/emulated/0/Video/Number/10.mp4"));
 
         daftarSoal.add(new SoalLatihan(
                 "Makanan apa yang disebutkan oleh bu guru?",
@@ -132,7 +132,7 @@ public class KuisActivity extends AppCompatActivity {
                 "Nasi",
                 "Permen",
                 "Sayur",
-                "/storage/emulated/0/Video/Makanan/Sayur.mp4"
+                "/storage/emulated/0/Video/Food/Vegetable.mp4"
         ));
         daftarSoal.add(new SoalLatihan(
                 "Siapa yang dimaksud oleh bu guru?",
@@ -141,7 +141,7 @@ public class KuisActivity extends AppCompatActivity {
                 "Nenek",
                 "Adik",
                 "Adik",
-                "/storage/emulated/0/Video/Keluarga/Adik.mp4"));
+                "/storage/emulated/0/Video/Family/Brother.mp4"));
 
         daftarSoal.add(new SoalLatihan(
                 "Makanan apa yang disebutkan bu guru?",
@@ -150,7 +150,7 @@ public class KuisActivity extends AppCompatActivity {
                 "Air",
                 "Kue",
                 "Permen",
-                "/storage/emulated/0/Video/Makanan/Permen.mp4"));
+                "/storage/emulated/0/Video/Food/Candy.mp4"));
 
     }
 

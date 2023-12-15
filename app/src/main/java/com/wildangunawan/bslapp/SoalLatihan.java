@@ -1,4 +1,4 @@
-package com.tikhanovesy.aplikasimarble;
+package com.wildangunawan.bslapp;
 
 public class SoalLatihan {
     private String soalLatihan, jawaban_a, jawaban_b, jawaban_c, jawaban_d, jawaban_benar, videoUrl;

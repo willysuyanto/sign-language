@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tikhanovesy.aplikasimarble">
+    package="com.wildangunawan.bslapp">
 
     <application
         android:allowBackup="true"
@@ -10,25 +10,26 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".KuisActivity"></activity>
-        <activity android:name=".PlaceholderActivity" />
-        <activity android:name=".GameCafeActivity" />
-        <activity android:name=".GameRumahActivity" />
-        <activity android:name=".PetunjukActivity" />
-        <activity android:name=".VideoPlayerActivity" />
-        <activity android:name=".BermainActivity" />
-        <activity android:name=".BahasaIsyarat" />
-        <activity android:name=".BelajarActivity" />
-        <activity android:name=".InputNamaActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name="com.wildangunawan.bslapp.KuisActivity"></activity>
+        <activity android:name="com.wildangunawan.bslapp.PlaceholderActivity" />
+        <activity android:name="com.wildangunawan.bslapp.GameCafeActivity" />
+        <activity android:name="com.wildangunawan.bslapp.GameRumahActivity" />
+        <activity android:name="com.wildangunawan.bslapp.PetunjukActivity" />
+        <activity android:name="com.wildangunawan.bslapp.VideoPlayerActivity" />
+        <activity android:name="com.wildangunawan.bslapp.BermainActivity" />
+        <activity android:name="com.wildangunawan.bslapp.BahasaIsyarat" />
+        <activity android:name="com.wildangunawan.bslapp.BelajarActivity" />
+        <activity android:name="com.wildangunawan.bslapp.InputNamaActivity" />
+        <activity android:name="com.wildangunawan.bslapp.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.wildangunawan.bslapp.MainActivity" />
     </application>
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

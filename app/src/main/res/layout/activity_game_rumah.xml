@@ -102,18 +102,18 @@
             android:contentDescription="@string/sebutan"
             android:src="@drawable/img_ibu" />
 
-        <ImageView
-            android:id="@+id/img_adik"
-            android:layout_width="70dp"
-            android:layout_height="150dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="150dp"
-            android:layout_marginBottom="80dp"
-            android:contentDescription="@string/sebutan"
-            android:src="@drawable/img_adik" />
+    <ImageView
+        android:id="@+id/img_adik"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="79dp"
+        android:contentDescription="@string/sebutan"
+        android:src="@drawable/img_adik" />
 
-        <ImageView
+    <ImageView
             android:id="@+id/img_kakek"
             android:layout_width="120dp"
             android:layout_height="230dp"
